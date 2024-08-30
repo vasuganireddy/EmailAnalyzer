@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  image: azureagent
+  name: azureagent
 
 steps:
 - script: echo Hello, world!
