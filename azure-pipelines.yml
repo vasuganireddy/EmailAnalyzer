@@ -29,3 +29,7 @@ stages:
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
+    - task: GitHubComment@0
+      inputs:
+        gitHubConnection: 'Git-Azure-Service-Connection'
+        repositoryName: 'vasuganireddy/EmailAnalyzer'
