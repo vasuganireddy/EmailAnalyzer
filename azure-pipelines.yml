@@ -24,7 +24,7 @@ stages:
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
-        containerRegistry: '$(dockerRegistryServiceConnection)'
+        containerRegistry: 'Git-Docker-Service-Connection'
         repository: '$(imageRepository)'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
